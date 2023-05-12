@@ -1,0 +1,31 @@
+const NFTs = []
+
+function InfoNiLuwiisChundog (_name, _sport, _leisuretime, _favpet, _favfruit, _mycolors) {
+    const NFT = {
+        "NAME": _name, 
+        "SPORT": _sport,  
+        "LEISURE TIME": _leisuretime, 
+        "FAV PET": _favpet,
+        "FAV FRUIT": _favfruit,  
+        "MY COLORS": _mycolors 
+
+    
+    }
+    NFTs.push(NFT); 
+    console.log("InfoNiLuwiisChundog: " + _name)  
+}
+
+function listNFTs () {
+for(let i = 0; i  < NFTs.length; i++) {
+console.log(NFTs[i])
+}
+}
+
+function getTotalSupply() {
+console.log(NFTs.length); 
+}
+
+
+InfoNiLuwiisChundog("ESIOUL", "Volleyball","Biking", "Dog (Chunder)", "Mango Melon and Pineapple", "Pink White and Blue")
+listNFTs(); 
+getTotalSupply();
